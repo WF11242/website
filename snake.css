@@ -55,3 +55,6 @@ button{
 .start-btn:focus::after{
     transform: translate(0);
 }
+.grid div{
+    transition: transform 0.4s ease;
+}
