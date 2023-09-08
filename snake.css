@@ -17,3 +17,6 @@ body{
     justify-content: center;
     height: 100vh;
 }
+button{
+    cursor: pointer;
+}
