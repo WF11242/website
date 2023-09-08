@@ -1,11 +1,10 @@
 body{
     color: crimson;
     background-color: slategray;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
 }
 h1{
     background-color: slategray;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: crimson;
 }
 .center{
