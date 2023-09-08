@@ -27,3 +27,12 @@ button{
     min-height: 200px;
     min-width: 200px;
 }
+.start-btn{
+    position: relative;
+    font-size: 1.15rem;
+    font-weight: bold;
+    background: var(--color-button);
+    padding: 0.6rem 1rem;
+    margin: 1rem 0;
+    border: 0;
+}
