@@ -51,3 +51,7 @@ button{
     transform: translate(-0.2rem, -0.2rem);
     transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
+.start-btn:hover::after,
+.start-btn:focus::after{
+    transform: translate(0);
+}
