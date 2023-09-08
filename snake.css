@@ -20,3 +20,10 @@ body{
 button{
     cursor: pointer;
 }
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid var(--color-border);
+    min-height: 200px;
+    min-width: 200px;
+}
