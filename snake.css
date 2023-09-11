@@ -93,3 +93,6 @@ button{
 #ArrowRight{
     grid-area: right;
 }
+.shake{
+    animation: shake 0.5s linear 1;
+}
