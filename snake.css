@@ -81,3 +81,15 @@ button{
 .keys-container button:focus{
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
+#ArrowUp{
+    grid-area: up;
+}
+#ArrowDown{
+    grid-area: down;
+}
+#ArrowLeft{
+    grid-area: left;
+}
+#ArrowRight{
+    grid-area: right;
+}
