@@ -4,9 +4,20 @@
     <meta charset="utf-8">
     <title> William's Homepage</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        function init() {
+  var loc = window.location.href;
+  var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+  var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
+                        loc + '?profile=css3';
+  document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
+  document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+}
+window.onload = init;
+    </script>
 </head>
 <body>
-    <div class="center"><h1>William's Homepage</h1>
+    <h1>William's Homepage</h1>
     <p>This is my website where I will show the projects I have worked on in web development.</p>
     
     <h2>Some Things I Like</h2>
@@ -15,6 +26,6 @@
         <li><a href="hobbies.html">Hobbies</a></li>
     </ul>
     <footer><p>Check out Head First Lounge:<br><a href="HeadFirstLounge/StarbuzzCoffee/index.html">Head First Lounge</a></p></footer>
-    </div>
+    
 </body>
 </html>
