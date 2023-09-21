@@ -27,3 +27,12 @@ const width = 10;
 const numCells = width * width;
 grid.style.width = `${width * 10 * 2}px`;
 grid.style.height = `${width * 10 * 2}px`;
+
+// create grid cells
+for (let i = 0; i < width * width; i++) {
+    const cell = document.createElement("div");
+    cell.style.width = `${width * 2}px`;
+    cell.style.height = `${width * 2}px`;
+    grid.appendChild(cell);
+  }
+  const cells = document.querySelectorAll(".grid div");
