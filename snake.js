@@ -71,6 +71,17 @@ for (let i = 0; i < width * width; i++) {
   
     cells[currentSnake[0]].classList.add("snake");
     cells[currentSnake[0]].innerText = "👀";
+    if (
+      (currentSnake[0] + width >= width * width && direction === width) || // hits bottom wall
+      (currentSnake[0] % width === width - 1 && direction === 1) || // hits right wall
+      (currentSnake[0] % width === 0 && direction === -1) || // hits left wall
+      (currentSnake[0] - width < 0 && direction === -width) || // hits the top wall
+      cells[currentSnake[0] + direction].classList.contains("snake") // hits itself
+    ) {
+      grid.classList.add("shake");
+      clearInterval(interval);
+      return;
+    }
     snakeColor += snakeColorIncrement % 360;
     cells[currentSnake[0]].style.background = `hsl(${snakeColor}, 100%, 50%)`;
   }
