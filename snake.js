@@ -44,6 +44,7 @@ for (let i = 0; i < width * width; i++) {
   const cells = document.querySelectorAll(".grid div");
 
   function startGame() {
+    grid.classList.remove("shake");
     currentSnake = [2, 1, 0];
     currentSnake.forEach((i) => {
       snakeColor += snakeColorIncrement % 360;
