@@ -95,4 +95,4 @@ for (let i = 0; i < width * width; i++) {
       return;
     moveSnake(e.key);
   }
-  
+  document.addEventListener("keydown", handleKeyMove);
