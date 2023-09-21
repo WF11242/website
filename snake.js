@@ -57,6 +57,7 @@ for (let i = 0; i < width * width; i++) {
       });
       clearInterval(interval);
       direction = 1;
+      interval = setInterval(gameLoop, intervalTime);
   }
   
   startBtn.addEventListener("click", startGame);
