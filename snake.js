@@ -74,3 +74,20 @@ for (let i = 0; i < width * width; i++) {
     snakeColor += snakeColorIncrement % 360;
     cells[currentSnake[0]].style.background = `hsl(${snakeColor}, 100%, 50%)`;
   }
+
+  function moveSnake(moveDirection) {
+    if (moveDirection === "ArrowRight") {
+      direction = 1;
+    }
+    if (moveDirection === "ArrowLeft") {
+      direction = -1;
+    }
+    if (moveDirection === "ArrowUp") {
+      direction = -width;
+    }
+    if (moveDirection === "ArrowDown") {
+      direction = width;
+    }
+  }
+
+  
