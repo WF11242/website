@@ -1,16 +1,19 @@
 body{
+    text-align: center;
     color: crimson;
     background-color: #77C2FD;
     font-size: 1.6em;
     font-family: sans-serif;
 }
 h1{
+    text-align: center;
     background-color: #77C2FD;
     color: crimson;
 }
-.games{
+/*.games{
     text-align: center;
 }
 .hobbies{
     text-align: center;
 }
+*/ 
