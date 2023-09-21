@@ -45,6 +45,17 @@ for (let i = 0; i < width * width; i++) {
   }
   const cells = document.querySelectorAll(".grid div");
 
+  async function createFood() {
+    foodItemIndex = Math.floor(Math.random() * numCells);
+    if (currentSnake.includes(foodItemIndex)) {
+      await wait(100);
+      createFood();
+    } else {
+      cells[foodItemIndex].classList.add("food-item");
+      cells[foodItemIndex].innerText = randomElementFromArray(foodItemsArray);
+    }
+  }
+
   function startGame() {
     grid.classList.remove("shake");
     currentSnake = [2, 1, 0];
