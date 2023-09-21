@@ -71,6 +71,11 @@ for (let i = 0; i < width * width; i++) {
       });
       clearInterval(interval);
       direction = 1;
+      cells[foodItemIndex].classList.remove("food-item");
+      cells[foodItemIndex].innerText = "";
+      createFood();
+      score = 0;
+      scoreDisplay.innerHTML = score;
       interval = setInterval(gameLoop, intervalTime);
   }
   
