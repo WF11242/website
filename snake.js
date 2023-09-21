@@ -88,18 +88,13 @@ for (let i = 0; i < width * width; i++) {
   }
 
   function moveSnake(moveDirection) {
-    if (moveDirection === "ArrowRight") {
-      direction = 1;
-    }
-    if (moveDirection === "ArrowLeft") {
-      direction = -1;
-    }
-    if (moveDirection === "ArrowUp") {
-      direction = -width;
-    }
-    if (moveDirection === "ArrowDown") {
-      direction = width;
-    }
+    let directionVal;
+  if (moveDirection === "ArrowRight" && direction !== -1) {
+    directionVal = 1;
+    if (currentSnake[0] + directionVal === currentSnake[1]) return;
+    direction = directionVal;
+  }
+  
   }
 
   function handleKeyMove(e) {
