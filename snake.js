@@ -39,3 +39,14 @@ for (let i = 0; i < width * width; i++) {
     grid.appendChild(cell);
   }
   const cells = document.querySelectorAll(".grid div");
+
+  function startGame() {
+    currentSnake = [2, 1, 0];
+    currentSnake.forEach((i) => {
+      snakeColor += snakeColorIncrement % 360;
+      cells[i].style.background = `hsl(${snakeColor}, 100%, 50%)`;
+      cells[i].classList.add("snake");
+    });
+  }
+  
+  startBtn.addEventListener("click", startGame);
