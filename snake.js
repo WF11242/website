@@ -50,6 +50,13 @@ for (let i = 0; i < width * width; i++) {
       cells[i].style.background = `hsl(${snakeColor}, 100%, 50%)`;
       cells[i].classList.add("snake");
     });
+    currentSnake.forEach((i) => {
+        cells[i].style.background = "none";
+        cells[i].classList.remove("snake");
+        cells[i].innerText = "";
+      });
+      clearInterval(interval);
+      direction = 1;
   }
   
   startBtn.addEventListener("click", startGame);
