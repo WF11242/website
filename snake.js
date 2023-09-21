@@ -30,6 +30,9 @@ grid.style.height = `${width * 10 * 2}px`;
 let currentSnake = [2, 1, 0];
 let snakeColor = Math.floor(Math.random() * 360);
 let snakeColorIncrement = 10;
+let direction = 1;
+let intervalTime = 200; // determines speed - frequency of game loop calls
+let interval = 0;
 
 // create grid cells
 for (let i = 0; i < width * width; i++) {
