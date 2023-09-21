@@ -21,3 +21,9 @@ const grid = document.querySelector(".grid");
 const scoreDisplay = document.querySelector("span");
 const startBtn = document.querySelector(".start-btn");
 const keyBtns = document.querySelectorAll(".keys-container button");
+
+// game variables
+const width = 10;
+const numCells = width * width;
+grid.style.width = `${width * 10 * 2}px`;
+grid.style.height = `${width * 10 * 2}px`;
