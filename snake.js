@@ -104,6 +104,11 @@ for (let i = 0; i < width * width; i++) {
     if (currentSnake[0] + directionVal === currentSnake[1]) return;
     direction = directionVal;
   }
+  if (moveDirection === "ArrowDown" && direction !== -width) {
+    directionVal = width;
+    if (currentSnake[0] + directionVal === currentSnake[1]) return;
+    direction = directionVal;
+  }
   }
 
   function handleKeyMove(e) {
