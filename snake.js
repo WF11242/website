@@ -90,4 +90,9 @@ for (let i = 0; i < width * width; i++) {
     }
   }
 
+  function handleKeyMove(e) {
+    if (!["ArrowRight", "ArrowLeft", "ArrowUp", "ArrowDown"].includes(e.key))
+      return;
+    moveSnake(e.key);
+  }
   
