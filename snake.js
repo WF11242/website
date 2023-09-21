@@ -33,6 +33,8 @@ let snakeColorIncrement = 10;
 let direction = 1;
 let intervalTime = 200; // determines speed - frequency of game loop calls
 let interval = 0;
+let foodItemIndex = 0; // first cell
+let score = 0;
 
 // create grid cells
 for (let i = 0; i < width * width; i++) {
