@@ -60,3 +60,16 @@ for (let i = 0; i < width * width; i++) {
   }
   
   startBtn.addEventListener("click", startGame);
+
+  function gameLoop() {
+    cells[currentSnake[0]].innerText = "";
+    const tail = currentSnake.pop();
+    cells[tail].classList.remove("snake");
+    cells[tail].style.background = "none";
+    currentSnake.unshift(currentSnake[0] + direction); // gives direction to the head
+  
+    cells[currentSnake[0]].classList.add("snake");
+    cells[currentSnake[0]].innerText = "👀";
+    snakeColor += snakeColorIncrement % 360;
+    cells[currentSnake[0]].style.background = `hsl(${snakeColor}, 100%, 50%)`;
+  }
