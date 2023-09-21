@@ -87,7 +87,16 @@ for (let i = 0; i < width * width; i++) {
     cells[tail].classList.remove("snake");
     cells[tail].style.background = "none";
     currentSnake.unshift(currentSnake[0] + direction); // gives direction to the head
-  
+    if (cells[currentSnake[0]].classList.contains("food-item")) {
+      cells[currentSnake[0]].classList.remove("food-item");
+      cells[tail].classList.add("snake");
+      snakeColor += snakeColorIncrement % 360;
+      cells[tail].style.background = `hsl(${snakeColor}, 100%, 50%)`;
+      currentSnake.push(tail);
+      score++;
+      scoreDisplay.textContent = score;
+      createFood();
+    }
     cells[currentSnake[0]].classList.add("snake");
     cells[currentSnake[0]].innerText = "👀";
     if (
