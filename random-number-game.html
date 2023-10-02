@@ -38,6 +38,12 @@
             <input type="submit" value="Submit guess" class="guessSubmit" onclick="checkGuess()">
         </div>
 
+        <div class="resultParas">
+            <p class="guesses"></p>
+            <p class="lastResult"></p>
+            <p class="lowOrHi"></p>
+          </div>
+
         <script>
             let randomNumber = Math.floor(Math.random() * 100) + 1;
             const guesses = document.querySelector(".guesses");
