@@ -37,6 +37,7 @@ button{
     padding: 0.6rem 1rem;
     margin: 1rem 0;
     border: 0;
+    color: white;
 }
 .start-btn::after{
     position: absolute;
