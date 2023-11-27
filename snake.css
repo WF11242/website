@@ -24,11 +24,10 @@ button{
 .grid{
     display: flex;
     flex-wrap: wrap;
-    border: 2px solid var(--color-border);
+    border: 2px solid black;
     min-height: 200px;
     min-width: 200px;
     background-color: white;
-    border: 1px solid black;
 }
 .start-btn{
     position: relative;
