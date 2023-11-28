@@ -16,6 +16,7 @@ h1{
     text-align: center;
     text-decoration: none;
     padding: 14px 25px;
+    display: inline-block;
 }
 .btn:hover {
     background-color: red;
