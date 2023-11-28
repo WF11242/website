@@ -29,8 +29,8 @@ window.onload = init;
     <h1>Ninety-Nine Bottles of Water</h1>
     </header>
     <main id="song">
-    </main>
 
+    </main>
     <footer>
         <a id="vLink1"><strong> HTML </strong> Valid! </a>
         <a id="vLink2"><strong> CSS </strong> Valid! </a>
@@ -42,15 +42,15 @@ window.onload = init;
 
         while (bottles > 1) {
             lyrics += "<p>"
-            lyrics += bottles + " bottles of " + drink + " on the wall <br> ";
+            lyrics += bottles + " bottles of " + drink + " on the wall <br>";
             lyrics += "Take one down, pass it around,";
             lyrics += "</p>"
             bottles--;
         }
         lyrics += "<p>"
-        lyrics += bottles + " bottle of " + drink + " on the wall <br> ";
+        lyrics += bottles + " bottle of " + drink + " on the wall <br>";
         lyrics += "Take one down, pass it around, no more bottles of ";
-        lyrics += drink + " on the wall ";
+        lyrics += drink + " on the wall";
         lyrics += "</p>"
         document.getElementById("song").innerHTML = lyrics;
     </script>
