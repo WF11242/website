@@ -10,3 +10,13 @@ h1{
     background-color: #77C2FD;
     color: crimson;
 }
+.btn {
+    background-color: crimson;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 25px;
+}
+.btn:hover {
+    background-color: red;
+}
