@@ -32,19 +32,21 @@ window.onload = init;
         <a id="vLink2"><strong> CSS </strong> Valid! </a>
     </footer>
     <script>
-        let drink = "Water";
+        let drink = "water";
         let lyrics = "";
         let bottles = 99;
 
         while (bottles > 1) {
             lyrics += "<p>";
             lyrics += bottles + " bottles of " + drink + " on the wall <br>";
+            lyrics += bottles + " bottles of " + drink + "<br>";
             lyrics += "Take one down, pass it around,";
             lyrics += "</p>";
             bottles--;
         }
         lyrics += "<p>";
         lyrics += bottles + " bottle of " + drink + " on the wall <br>";
+        lyrics += bottles + " bottles of " + drink + "<br>";
         lyrics += "Take one down, pass it around, no more bottles of ";
         lyrics += drink + " on the wall";
         lyrics += "</p>";
