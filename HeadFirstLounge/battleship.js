@@ -8,5 +8,7 @@ var guesses = 0;
 
 var isSunk = false;
 
-console.log(isSunk)
+while (isSunk == false) {
+    guess = prompt("Ready, aim, fire! (Enter a number between 0-6):");
+}
 
