@@ -10,5 +10,10 @@ var isSunk = false;
 
 while (isSunk == false) {
     guess = prompt("Ready, aim, fire! (Enter a number between 0-6):");
+    if (guess < 0 || guess > 6){
+        alert("Please enter a valid cell number!");
+    } else {
+        guesses = guesses + 1;
+    }
 }
 
