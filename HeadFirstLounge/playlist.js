@@ -10,9 +10,9 @@ function handleButtonClick() {
         alert("Please enter a song!");
     } else {
        console.log("Adding " + songName);
-        var li = document.createElement("li");
+        let li = document.createElement("li");
 		li.innerHTML = songName;
-		var ul = document.getElementById("playlist");
+		let ul = document.getElementById("playlist");
 		ul.appendChild(li);
 	    
 	    save(songName);
