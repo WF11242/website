@@ -9,10 +9,12 @@ function handleButtonClick() {
     if (songName == "") {
         alert("Please enter a song!");
     } else {
-       alert("Adding " + songName);
+       console.log("Adding " + songName);
         var li = document.createElement("li");
 		li.innerHTML = songName;
 		var ul = document.getElementById("playlist");
 		ul.appendChild(li);
+	    
+	    save(songName);
     }
 }
