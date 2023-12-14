@@ -14,7 +14,8 @@ function handleButtonClick() {
 		li.innerHTML = songName;
 		let ul = document.getElementById("playlist");
 		ul.appendChild(li);
-	    
+	      ul.style.backgroundColor = "crimson";
+	      ul.style.color = "black";
 	    save(songName);
     }
 }
