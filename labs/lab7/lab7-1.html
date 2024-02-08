@@ -60,7 +60,21 @@ h1{
             addEventListener("mousemove", (e) => {
                 cursor.x = e.clientX;
                 cursor.y = e.clientY;
-            })
+            });
+
+            addEventListener(
+                "touchmove", 
+                (e) => {
+                    e.preventDefault();
+                    cursor.x = e.touches[0].clientX;
+                    cursor.y = e.touches[0].clientY;
+                },
+                { passive: false },
+            );
+
+            addEventListener("resize", () => setSize());
+
+            
         </script>
     </body>
 </html>
