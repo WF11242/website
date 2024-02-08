@@ -74,7 +74,19 @@ h1{
 
             addEventListener("resize", () => setSize());
 
-            
+            function generateParticles(amount) {
+                for (let i = 0; i < amount; i++) {
+                particlesArray[i] = new Particle(
+                innerWidth / 2, 
+                innerHeight / 2,
+                4, 
+                generateColor(), 
+                0.02,
+            );
+         }
+        }
+
+        
         </script>
     </body>
 </html>
