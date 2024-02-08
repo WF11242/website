@@ -44,6 +44,23 @@ h1{
         <script>
             const canvas = document.getElementById("cw");
             const context = canvas.getContext("2d");
+            context.globalAlpha = 0.5;
+            
+            const cursor = {
+                x: innerWidth / 2, 
+                y: innerHeight / 2,
+            };
+
+            let particlesArray = [];
+
+            generateParticles(101);
+            setSize();
+            anim();
+
+            addEventListener("mousemove", (e) => {
+                cursor.x = e.clientX;
+                cursor.y = e.clientY;
+            })
         </script>
     </body>
 </html>
