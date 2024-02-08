@@ -126,7 +126,14 @@ h1{
   };
 }
 
+            function anim() {
+            requestAnimationFrame(anim);
 
+            context.fillStyle = "#000";
+            context.fillRect(0, 0, canvas.width, canvas.height);
+
+            particlesArray.forEach((particle) => particle.rotate());
+}
         </script>
     </body>
 </html>
