@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>CIW Labs</title>
+    <title>Registration Forms</title>
     <style>
     body{
     text-align: center;
@@ -47,11 +47,30 @@ window.onload = init;
     </style>
 </head>
 <body>
-    <h1>CIW Labs:</h1>
-    <a href="" class="btn">Registration Lab</a>
-    <footer>
-        <a id="vLink1"><strong> HTML </strong> Valid! </a>
-        <a id="vLink2"><strong> CSS </strong> Valid! </a>
-    </footer>
+    <article>
+        <h1>Registration Form</h1>
+        <form>
+            <p>
+                <label for="first">First name: </label>
+                <input type="text" name="firstname" id="first" />
+            </p>
+            <p>
+                <label for="last">Last name: </label>
+                <input type="text" name="lastname" id="last" />
+            </p>
+            <p>
+                <label for="db">Date of Birth: </label>
+                <input type="date" name="dob" id="db" />
+            </p>
+            <p>
+                <label for="tech">How many sports teams do you know?: 0 </label>
+                <input type="range" name="teams" min="0" max="50" value="25" id="tech" /> 10+
+            </p>
+            <p>
+                <label for="num">Age of user: </label>
+                <input type="number" name="age" min="1" max="100" id="num" />
+            </p>
+        </form>
+    </article>
 </body>
 </html>
