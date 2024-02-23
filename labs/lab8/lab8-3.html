@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Fieldset Lab</title>
+        <style>
+body{
+    text-align: center;
+    color: white;
+    background-color: #000;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+}
+.btn {
+    background-color: crimson;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 25px;
+    margin: 5px;
+    display: inline-block;
+}
+.btn:hover {
+    background-color: red;
+}
+#cw {
+    position: fixed;
+    z-index: -1;
+}
+        </style>
+    </head>
+<body>
+    <form>
+        <fieldset name="personal_info">
+            <legend>Personal Information:</legend>
+            <p>
+                <label for="first">First name: </label>
+                <input type="text" name="firstname" id="first" />
+            </p>
+            <p>
+                <label for="last">Last name: </label>
+                <input type="text" name="lastname" id="last" />
+            </p>
+            <p>
+                <label for="db">Date of Birth: </label>
+                <input type="date" name="dob" id="db" />
+            </p>
+            <p>
+                <label for="cont">Your Continent: </label>
+                <input list="continents" name="continent" id="cont" />
+                <datalist id="continents">
+                    <option value="North America"> </option>
+                    <option value="South America"> </option>
+                    <option value="Europe"> </option>
+                    <option value="Asia"> </option>
+                    <option value="Africa"> </option>
+                    <option value="Australia"> </option>
+                    <option value="Antarctica"> </option>
+                </datalist>
+            </p>
+        </fieldset>
+        <fieldset name="other-information">
+            <legend>Other Information:</legend>
+            <p>
+                <label for="tech">How many technologies do you know?: 0 </label>
+                <input type="range" name="technologies" min="0" max="50" value="25" id="tech" /> 10+
+            </p>
+            <p>
+                <label for="num">Age of user: </label>
+                <input type="number" name="age" min="1" max="100" id="num" />
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
