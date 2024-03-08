@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CIW Labs</title>
+    <style>
+    body{
+    text-align: center;
+    color: crimson;
+    background-color: #77C2FD;
+    font-size: 1.6em;
+    font-family: sans-serif;
+}
+h1{
+    text-align: center;
+    background-color: #77C2FD;
+    color: crimson;
+}
+.btn {
+    background-color: crimson;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 25px;
+    margin: 5px;
+    display: inline-block;
+}
+.btn:hover {
+    background-color: red;
+}
+    </style>
+    <script>
+    function init() {
+  var loc = window.location.href;
+  var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+  var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
+                        loc + '?profile=css3';
+  document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
+  document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+}
+window.onload = init;
+    </script>
+    <style>
+        .btn{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset name="pattern_attribute">
+            <legend>The Pattern Attribute</legend>
+            <p>
+                <label for="date">Date: </label>
+                <input type="text" name="date" placeholder="dd/mm/yyyy" pattern="\d{1,2}/\d{1,2}/\d{4}" id="date" />
+            </p>
+            <button type="submit" formaction="http://ss1.ciwcertified.com/cgi-bin/process.pl">Submit Form</button>
+        </fieldset>
+    </form>
+</body>
+</html>
