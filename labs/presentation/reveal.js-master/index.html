@@ -27,13 +27,12 @@
 				</section>
 				<section>
 					<h3>Examples</h3>
-					<pre><code data-trim data-noescape>
+					<pre><code data-line-numbers="1-3|4-6|7-10">
 						<li>
 							<span>Taxes and Fees</span>
 							<span class="infoIcn" data-toggle="tooltip" data-html="true" title="Spot Price: $4310.00<br>Processing:  $<%%=total_p_fee.toFixed(2)%><br>Cancellation Protection: $<%%= total_p_fee.toFixed(2) %><br>Sales Tax: $241.36">
 							  <span class="glyphicon glyphicon-info-sign"></span>
 							</span>
-							<!--add class editInputBox to show input-->
 											<span class="price processing_fee_block">
 											  <input type="text" name="order[total_processing_fee]" value="<%%= total_p_fee.toFixed(2) %>">
 											  <span>$ <span class="value"><%%= total_p_fee.toFixed(2) %></span></span>
