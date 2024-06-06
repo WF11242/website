@@ -8,13 +8,12 @@ let result;
 
 
 function choice(){
-    Array.from(choiceBtns).forEach(button => button.addEventListener("click", () => {
-        player = button.textContent;
-        computerTurn();
-        playerText.textContent = `Player : ${player}`;
-        computerText.textContent = `Computer : ${computer}`;
-        resultText.textContent = checkWinner();
-    }));
+    player = button.textContent;
+    computerTurn();
+    playerText.textContent = `Player : ${player}`;
+    computerText.textContent = `Computer : ${computer}`;
+    resultText.textContent = checkWinner();
+    console.log("Test")
 };
 function computerTurn(){
     const randNum = Math.floor(Math.random() * 3) + 1;
