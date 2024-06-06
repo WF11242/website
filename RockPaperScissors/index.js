@@ -41,4 +41,4 @@ function checkWinner(){
     else if(computer == "SCISSORS"){
         return (player == "ROCK") ? "You Win!" : "You Lose!"
     }
-}
+};
