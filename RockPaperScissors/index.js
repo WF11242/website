@@ -25,4 +25,13 @@ if (playerChoice === computerChoice) {
     window.alert("It's a tie! Try again."); 
 }
 
+else if (
+    (playerChoice === "R" && computerChoice === "S") ||
+    (playerChoice === "P" && computerChoice === "R") ||
+    (playerChoice === "S" && computerChoice === "P") 
+
+) {
+    wins++;
+    window.alert("Congrats! You won $$");
+}
 playGame (); 
